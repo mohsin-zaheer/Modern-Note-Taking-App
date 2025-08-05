@@ -1,0 +1,336 @@
+.dashboard-bg{
+    padding: 30px 40px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.title{
+    color: #000;
+font-family: Inter;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.inpBg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding-left: 10px;
+    font-size: 22px;
+
+}
+
+.inp{
+    width: 346px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: #F7F7F7;
+}
+
+
+
+.noteCard{
+    background-color: #F7F7F7 ;
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.note-count{
+    color: #808080;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.important{
+    background: #578DF5;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px ;
+}
+
+.note-title{
+    color: #000;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.note-desc{
+    color: #808080;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.card-bottom{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-date{
+    color: #808080;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.card-btn{
+    outline: none;
+    border: none;
+    margin: 0px 4px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trash{
+    background-color: red;
+}
+
+.edit{
+    background-color: #578DF5;
+}
+
+
+/* footer  */
+
+.footerBg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #F7F7F7;
+}
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+}
+
+.socialIcon{
+    font-size: 25px;
+    margin: 0px 5px;
+}
+
+
+.copyright{
+    color: #808080;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.profileBg{
+    padding: 30px 40px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userImg{
+    width: 100px;
+}
+.userInfo{
+    padding-left: 10px;
+}
+
+.userInfo > h2{
+    color: #000;
+font-family: Inter;
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.joinDate{
+    color: #808080;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.statsBg{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat{
+    color: #808080;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 30px;
+}
+
+.stats-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.custom-btn{
+    outline: none;
+    border: none;
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: #578DF5;
+    margin-right: 20px;
+}
+
+
+.profile-title{
+    color: #000;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.title-change{
+    color: #578DF5;
+}
+
+
+.oops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.oopsImg{
+    width: 150px;
+}
+
+
+.notFoundText{
+    text-align: center;
+    width: 380px;
+    margin: 20px 0px;
+}
+
+.notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.note{
+    width: 150px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .top{
+        flex-direction: column;
+    }
+
+    .title{
+        margin-bottom: 15px;
+    }
+    .inp{
+        width: 100%;
+    }
+    .dashboard-bg{
+        padding: 20px;
+    }
+    .noteCard{
+        margin: 10px 0px;
+    }
+    .copyright{
+        font-size: 12px;
+        text-align: center;
+        padding: 0px 5px;
+    }
+    .socialIcon{
+        font-size: 16px;
+        margin: 0px 3px;
+    }
+    .footerBg{
+        padding: 10px 20px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .profileBg{
+        padding: 20px;
+    }
+    .stats-buttons{
+        padding-top: 10px;
+    }
+    .statsBg{
+        margin-top: 20px;
+    }
+}
