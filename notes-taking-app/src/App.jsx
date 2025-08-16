@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Signup from './components/auth/Signup';
-import Login from './components/auth/login';
+import Login from './components/auth/Login';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';

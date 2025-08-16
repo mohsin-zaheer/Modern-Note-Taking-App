@@ -22,8 +22,12 @@ app.use('/api/notes', noteRoutes);
 app.use('/api/upload', uploadRoutes);
 
 
+app.use('/api/healthz', (_req, res) => {
+  res.status(200).send('ok');
+})
+
 
 // Connect to DB and start server
 connectDB().then(() => {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  app.listen(PORT, "0.0.0.0", () => console.log(`API running on port ${PORT}`));
 });

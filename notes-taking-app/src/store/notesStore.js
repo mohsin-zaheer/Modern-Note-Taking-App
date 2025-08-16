@@ -42,7 +42,7 @@ const useNotesStore = create((set) => ({
 
 
     try {
-      const res = await fetch('http://localhost:5000/api/notes', {
+      const res = await fetch('/api/notes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const useNotesStore = create((set) => ({
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/notes/${id}`, {
+      const res = await fetch(`/api/notes/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -97,7 +97,7 @@ const useNotesStore = create((set) => ({
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/notes/${updatedNote._id}`, {
+      const res = await fetch(`/api/notes/${updatedNote._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
