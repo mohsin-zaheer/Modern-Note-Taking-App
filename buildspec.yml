@@ -21,3 +21,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 815254798932.dkr.ecr.us-east-1.amazonaws.com/webapp:$IMAGE_TAG
+artifacts:
+  files:
+    - appspec.yml

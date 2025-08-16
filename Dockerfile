@@ -1,12 +1,3 @@
-# ===== FRONTEND BUILD STAGE =====
-FROM node:20-alpine AS frontend-build
-WORKDIR /notes-taking-app
-COPY notes-taking-app/package*.json ./
-RUN npm ci
-COPY notes-taking-app/ ./
-RUN npm run build
-
-
 # ===== BACKEND BUILD STAGE =====
 FROM node:20-alpine AS backend-build
 WORKDIR /backend
@@ -15,7 +6,6 @@ RUN npm ci --omit=dev
 COPY backend/ ./
 ENV NODE_ENV=production
 
-
 # ===== FINAL RUNTIME IMAGE =====
 FROM node:20-alpine
 WORKDIR /app
@@ -23,8 +13,8 @@ WORKDIR /app
 # Copy backend (Express app)
 COPY --from=backend-build /backend ./
 
-# Copy frontend build into backend’s public folder
-COPY --from=frontend-build /notes-taking-app/dist ./public
+# Expose 8080 (matches ECS ALB health checks)
+EXPOSE 8080
 
-EXPOSE 5000
+# Start server
 CMD ["node", "server.js"]
